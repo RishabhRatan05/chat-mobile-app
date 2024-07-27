@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "Chatapp",
+    "slug": "chat-app",
+    "description": "connect to chat",
+    "scheme": "chatapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/gojo.jpg",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/icon.jpg",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/gojo.jpg",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.rishabhratan.chatapp"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/gojo.jpg"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "55a20360-55d5-4d4a-8ff3-0bcd5eac2c72"
+      }
+    }
+  }
+}
