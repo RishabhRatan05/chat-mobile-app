@@ -4,13 +4,13 @@ import { getReactNativePersistence, initializeAuth } from "firebase/auth"
 import { getFirestore, collection } from "firebase/firestore"
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCjYK9e0AQYxeAW7QRhhFzGkA8AsOCrSV0",
-  authDomain: "chat-app-3b73e.firebaseapp.com",
-  databaseURL: "https://chat-app-3b73e-default-rtdb.firebaseio.com",
-  projectId: "chat-app-3b73e",
-  storageBucket: "chat-app-3b73e.appspot.com",
-  messagingSenderId: "571182558152",
-  appId: "1:571182558152:web:24cac5ce75e17b13ad6efd",
+  apiKey: process.env.EXPO_PUBLIC_API_KEY,
+  authDomain: process.env.EXPO_PUBLIC_AUTH_DOMAIN,
+  databaseURL: process.env.EXPO_PUBLIC_DB_URL,
+  projectId: process.env.EXPO_PUBLIC_PROJECT_ID,
+  storageBucket: process.env.EXPO_PUBLIC_STORAGE_BUCKET,
+  messagingSenderId: process.env.EXPO_PUBLIC_M_SENDER_ID,
+  appId: process.env.EXPO_PUBLIC_APP_ID,
 }
 
 const app = initializeApp(firebaseConfig)
